@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img  class = "logo" src="./assets/images/Vector.svg" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <section>
+            <textarea name="" id="txtArea" cols="30" rows="10" placeholder="Type your text"></textarea>
+            <div class="instructions">
+                <p class="warning"><i class="fa-solid fa-circle-exclamation"></i>Only lowercase and without accent.</p>
+                <div class="options">
+                    <button id="btn-encrypt">Encrypt</button>
+                    <button id="btn-decrypt">Decrypt</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <textarea  class="txt-display" name="" id="txt-display" cols="30" rows="10" placeholder="No Message"></textarea>
+            <div class="informations">
+                <img class="picture" src="./assets/images/image1.png" alt="picture decryptor">
+                <p>No message found</p>
+                <p>Enter a text that you want to encrypt or decrypt.</p>
+            </div>
+            <button class="btn-copy" id="btn-copy">Copy</button>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
